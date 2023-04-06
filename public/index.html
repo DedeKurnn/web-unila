@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cust-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/39a854cbd3.js" crossorigin="anonymous"></script>
+    <title>Universitas Lampung</title>
+</head>
+<body class="overflow-x-hidden">
+    <div class="fixed bottom-4 right-4 z-50 h-16 w-16 flex items-center justify-center rounded-full bg-yellow-400 shadow-lg group">
+        <p class="text-xs text-center absolute opacity-0 group-hover:opacity-100 group-hover:block transition-all leading-none">BANTUAN</p>
+        <i class="fa-solid fa-phone-volume absolute group-hover:opacity-0 transition-all"></i>
+    </div>
+    <header class="bg-primary absolute top-0 left-0 w-full flex items-center z-20">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between relative">
+                <a class="px-4 py-2 flex items-center gap-1 bg-secondary" href="#">
+                    <img class="w-[3rem] sm:w-[5rem]" src="../assets/LOGO-UNILA-HITAM 1.png" alt="Logo Universitas Lampung">
+                    <div>
+                        <p class="font-playfair text-white text-sm sm:text-base">UNIVERSITAS</p>
+                        <p class="font-playfair text-white text-sm sm:text-base">LAMPUNG</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Home section, contains hero image -->
+    <section id="home">
+        <div class="w-screen h-[80vh] md:h-screen">
+            <div class="w-screen h-[80vh] md:h-screen absolute z-10 top-0 left-0 bg-black bg-opacity-20 flex items-center justify-center">
+                <div>
+                    <img class="mx-auto object-contain" src="../assets/LOGO-UNILA-HITAM 1.png" alt="" style="width: 12rem">
+                    <h1 class="text-white">"Dengan Ilmu Kita menuju Kemuliaan"</h1>
+                    <p class="text-center text-white font-playfair">Ki Hajar Dewantara</p>
+                </div>
+            </div>
+            <div class="w-screen h-[80vh] md:h-screen absolute top-0 left-0 sm:hidden">
+                <img class="w-screen h-[80vh] md:h-screen object-cover" src="../assets/rectorate-front.jpg" alt="Hero Image">
+            </div>
+            <div class="relative overflow-hidden w-screen h-[80vh] md:h-screen object-cover hidden sm:block">
+                <iframe class="absolute top-1/2 left-1/2 -z-10 w-screen h-[80vh] md:h-screen -translate-x-1/2 -translate-y-1/2 object-cover" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; mute; loop" title="Video Profil Universitas Lampung Tahun 2022 (Bahasa Indonesia)" width="640" height="360" src="https://www.youtube.com/embed/wyNSdADGCP8?controls=0&rel=0&playsinline=1&enablejsapi=1&autoplay=1&mute=1&loop=1"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- End of home section -->
+    <!-- News section -->
+    <section id="warta-unila" class="container mx-auto px-4 sm:mt-12">
+        <h1 class="my-12 sm:text-5xl">Warta Universitas Lampung</h1>
+        <!-- Highlighted news items -->
+        <div id="highlight-news" class="sm:flex sm:gap-8">
+            <div class="h-auto object-cover overflow-hidden sm:w-2/5">
+                <img class="hover:scale-105 transition-all duration-300" src="../assets/unila-dan-dewas-blu.jpeg" alt="Unila dan Dewas BLU Gelar Rapat">
+            </div>
+            <div class="sm:w-3/5">
+                <p class="text-base font-semibold text-slate-400 my-4 sm:mt-0 sm:mb-8">29 Maret 2023</p>
+                <a class="text-xl text-primary font-semibold font-playfair leading-tight mb-4 block sm:text-3xl" href="#">Unila dan Dewas BLU Gelar Rapat Koordinasi</a>
+                <p>(Unila): Universitas Lampung (Unila) menggelar rapat koordinasi (rakor) dengan Dewan Pengawas (Dewas) BLU Unila secara daring, Rabu 29 Maret 2023.
+
+                    Rapat yang dibuka langsung Rektor Unila Prof. Dr. Ir. Lusmeilia Afriani, D.E.A., I.P.M., ini turut dihadiri para wakil rektor, dekan, kepala biro, ketua lembaga, anggota SPI, kepala UPT, dan koordinator bagian di lingkungan Unila.</p>
+                <a class="read-more flex items-center gap-4 mt-4 group" href="#">
+                    <div class="px-4 py-3 rounded-full bg-emerald-100 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <p class="text-primary font-semibold group-hover:underline">Baca selengkapnya</p>
+                </a>
+            </div>
+        </div>
+        <div id="secondary-new" class="sm:flex sm:gap-8">
+            <div class="mt-8 sm:w-1/3">
+                <div class="my-4 overflow-hidden">
+                    <img class="w-full hover:scale-105 transition-all duration-300"src="../assets/rapat.jpeg" alt="Warek BUK Buka Workshop RPL PSPPI Unila">
+                </div>
+                <h3 class="text-lg text-primary font-semibold font-playfair leading-tight mb-2">Warek BUK Buka Workshop RPL PSPPI Unila</h3>
+            </div>
+            <div class="mt-8 sm:w-1/3">
+                <div class="my-4 overflow-hidden">
+                    <img class="w-full hover:scale-105 transition-all duration-300" src="../assets/rapat.jpeg" alt="Warek BUK Buka Workshop RPL PSPPI Unila">
+                </div>
+                <h3 class="text-lg text-primary font-semibold font-playfair leading-tight mb-2">Warek BUK Buka Workshop RPL PSPPI Unila</h3>
+            </div>
+            <div class="mt-8 sm:w-1/3">
+                <div class="my-4 overflow-hidden">
+                    <img class="w-full hover:scale-105 transition-all duration-300" src="../assets/rapat.jpeg" alt="Warek BUK Buka Workshop RPL PSPPI Unila">
+                </div>
+                <h3 class="text-lg text-primary font-semibold font-playfair leading-tight mb-2">Warek BUK Buka Workshop RPL PSPPI Unila</h3>
+            </div>
+        </div>
+    </section>
+    <!-- End of news section -->
+    <!-- About section -->
+    <section id="tentang-unila" class="container sm:relative mx-auto px-4 my-24 sm:my-36">
+        <h1 class="my-12 sm:text-5xl sm:mb-30">Tentang Universitas Lampung</h1>
+        <!-- <div class="line hidden absolute left-1/2 -top-36 h-auto sm:block">
+            <svg width="12" height="1779" viewBox="0 0 12 1779" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0.666667C3.05448 0.666667 0.666667 3.05448 0.666667 6C0.666667 8.94552 3.05448 11.3333 6 11.3333C8.94552 11.3333 11.3333 8.94552 11.3333 6C11.3333 3.05448 8.94552 0.666667 6 0.666667ZM6 1767.67C3.05448 1767.67 0.666667 1770.05 0.666667 1773C0.666667 1775.95 3.05448 1778.33 6 1778.33C8.94552 1778.33 11.3333 1775.95 11.3333 1773C11.3333 1770.05 8.94552 1767.67 6 1767.67ZM5 6L5 1773H7L7 6H5Z" fill="#06413A"/>
+                </svg>
+        </div> -->
+        <!-- Unila Kampus Global -->
+        <div class="sm:flex sm:flex-row-reverse sm:gap-20 items-center justify-center my-12">
+            <div class="object-cover overflow-hidden aspect-[4/3] sm:w-1/2">
+                <img class="w-full h-full object-cover hover:scale-105 transition-all duration-300" src="../assets/Orientasi-Mahasiswa-Asing-Unila-2022-d.jpeg" alt="Unila dan Dewas BLU Gelar Rapat">
+            </div>
+            <div class="sm:w-1/2">
+                <a class="text-xl text-primary font-semibold font-playfair leading-tight my-4 block sm:text-3xl" href="#">Unila Kampus Global</a>
+                <p>"Di kampus yang inklusif ini, suara-suara berbeda tumbuh dalam harmoni, Menari-nari dalam irama ilmu dan semangat kebersamaan yang tak tergoyahkan. Universitas Lampung, menyediakan pelukan hangat bagi siapa saja, Menggenggam tanganmu dalam perjalanan meraih mimpi dan menggapai bintang."</p>
+                <a class="read-more flex items-center gap-4 mt-4 group" href="#">
+                    <div class="px-4 py-3 rounded-full bg-emerald-100 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <p class="text-primary font-semibold group-hover:underline">Baca selengkapnya</p>
+                </a>
+            </div>
+        </div>
+        <!-- Unila Kampus Mengabdi -->
+        <div class="sm:flex sm:gap-20 items-center justify-center my-12">
+            <div class="object-cover overflow-hidden aspect-[4/3] sm:w-1/2">
+                <img class="w-full h-full object-cover hover:scale-105 transition-all duration-300" src="../assets/pengabdian.jpg" alt="Unila dan Dewas BLU Gelar Rapat">
+            </div>
+            <div class="sm:w-1/2">
+                <a class="text-xl text-primary font-semibold font-playfair leading-tight my-4 block sm:text-3xl" href="#">Unila Kampus Mengabdi</a>
+                <p>Unila secara konsisten dan sistematik sejak tahun pendiriannya 1965 berjuang bersama rakyat hingga akar rumput membangun dan menyejahterakan Indonesia. Unila terus mendorong peningkatan kuantitas dan kualitas pengabdian kepada masyarakat berbasis riset di Indonesia maupun di dunia Internasional dengan prinsip-prinsip pembangunan berkelanjutan.</p>
+                <a class="read-more flex items-center gap-4 mt-4 group" href="#">
+                    <div class="px-4 py-3 rounded-full bg-emerald-100 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <p class="text-primary font-semibold group-hover:underline">Baca selengkapnya</p>
+                </a>
+            </div>
+        </div>
+        <!-- Unila Kampus Riset -->
+        <div class="sm:flex sm:flex-row-reverse sm:gap-20 items-center justify-center my-12">
+            <div class="object-cover overflow-hidden aspect-[4/3] sm:w-1/2">
+                <img class="w-full h-full object-cover hover:scale-105 transition-all duration-300" src="../assets/researching.jpg" alt="Unila dan Dewas BLU Gelar Rapat">
+            </div>
+            <div class="sm:w-1/2">
+                <a class="text-xl text-primary font-semibold font-playfair leading-tight my-4 block sm:text-3xl" href="#">Unila Kampus Riset</a>
+                <p>Sebagai Universitas Riset Berkelas Dunia, Universitas Lampung memberikan perhatian khusus terhadap kegiatan-kegiatan penelitian serta mendorong dosen dan mahasiswa untuk melakukan dan mengembangkan berbagai penelitian yang berorientasi untuk memenuhi kebutuhan bangsa.</p>
+                <a class="read-more flex items-center gap-4 mt-4 group" href="#">
+                    <div class="px-4 py-3 rounded-full bg-emerald-100 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <p class="text-primary font-semibold group-hover:underline">Baca selengkapnya</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End of about section -->
+    <!-- Education section -->
+    <section id="pendidikan" class="container mx-auto sm:px-4 sm:mt-12">
+        <h1 class="my-12 sm:text-5xl sm:mb-30">Pendidikan</h1>
+        <div class="snap-x flex whitespace-nowrap overflow-x-scroll hide-scroll-bar gap-4">
+            <!-- Program Diploma dan Sarjana Terapan -->
+            <div class="w-3/4 flex-shrink-0 bg-secondary group snap-center overflow-hidden sm:w-full sm:flex-shrink">
+                <div class="object-cover aspect-square w-full overflow-hidden">
+                    <img class="aspect-square w-full object-cover group-hover:scale-105 transition-all" src="../assets/diploma.jpg" alt="Program Diploma">
+                </div>
+                <div class="p-4">
+                    <p class="text-white text-base whitespace-normal mb-2">Program Diploma</p>
+                    <a class="text-white font-plusJakarta font-light text-sm underline" href="#">Baca selengkapnya</a>
+                </div>
+            </div>
+            <!-- Program Sarjana -->
+            <div class="w-3/4 flex-shrink-0 bg-secondary group snap-center overflow-hidden sm:w-full sm:flex-shrink">
+                <div class="object-cover aspect-square w-full overflow-hidden">
+                    <img class="aspect-square object-cover group-hover:scale-105 transition-all" src="../assets/Wisuda-Offline-Lulusan-Unila-Periode-I-TA-2022-2023-b.jpeg" alt="Program Sarjana">
+                </div>
+                <div class="p-4">
+                    <p class="text-white text-base whitespace-normal mb-2">Program Sarjana</p>
+                    <a class="text-white font-plusJakarta font-light text-sm underline" href="#">Baca selengkapnya</a>
+                </div>
+            </div>
+            <!-- Program Pascasarjana -->
+            <div class="w-3/4 flex-shrink-0 bg-secondary group snap-center overflow-hidden sm:w-full sm:flex-shrink">
+                <div class="object-cover aspect-square w-full overflow-hidden">
+                    <img class="aspect-square object-cover group-hover:scale-105 transition-all" src="../assets/rut-miit-oTglG1D4hRA-unsplash.jpg" alt="Program Pascasarjana">
+                </div>
+                <div class="p-4">
+                    <p class="text-white text-base whitespace-normal mb-2">Program Pascasarjana</p>
+                    <a class="text-white font-plusJakarta font-light text-sm underline" href="#">Baca selengkapnya</a>
+                </div>
+            </div>
+            <!-- Program Profesi -->
+            <div class="w-3/4 flex-shrink-0 bg-secondary group snap-center overflow-hidden sm:w-full sm:flex-shrink">
+                <div class="object-cover aspect-square w-full overflow-hidden">
+                    <img class="aspect-square object-cover group-hover:scale-105 transition-all" src="../assets/emmanuel-ikwuegbu-_2AlIm-F6pw-unsplash.jpg" alt="Program Profesi">
+                </div>
+                <div class="p-4">
+                    <p class="text-white text-base whitespace-normal mb-2">Program Profesi</p>
+                    <a class="text-white font-plusJakarta font-light text-sm underline" href="#">Baca selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of education section -->
+    <section id="kemahasiswaan" class="container mx-auto sm:px-4 sm:mt-12">
+        <h1 class="my-12 sm:text-5xl sm:mb-30">Kemahasiswaan</h1>
+        <div class="sm:flex">
+            <div class="w-full h-72 bg-cover group relative overflow-hidden sm:w-1/3" style="background-image: url('../assets/rusun.jpg')">
+                <div class="absolute bottom-0 px-4 pb-4 py-48 w-full bg-gradient-to-t from-primary to-transparent sm:translate-y-24 sm:group-hover:-translate-y-0 transition-all"> 
+                    <p class="text-xl text-white opacity-100 font-semibold">Kehidupan Kampus</p>
+                    <a class="text-white font-plusJakarta font-light text-sm underline" href="#">Baca selengkapnya</a>
+                </div>
+            </div>
+            <div class="w-full h-72 bg-cover group relative overflow-hidden sm:w-1/3" style="background-image: url('../assets/UKM-PSM-Unila-Sukses-Gelar-5th-Annual-Concert-PSM-b.jpeg')">
+                <div class="absolute bottom-0 px-4 pb-4 py-48 w-full bg-gradient-to-t from-primary to-transparent sm:translate-y-24 sm:group-hover:-translate-y-0 transition-all"> 
+                    <p class="text-xl text-white opacity-100 font-semibold">Organisasi Mahasiswa</p>
+                    <a class="text-white font-plusJakarta font-light text-sm underline" href="#">Baca selengkapnya</a>
+                </div>
+            </div>
+            <div class="w-full h-72 bg-cover group relative overflow-hidden sm:w-1/3" style="background-image: url('../assets/arif-ferbiansyah.jpeg')">
+                <div class="absolute bottom-0 px-4 pb-4 py-48 w-full bg-gradient-to-t from-primary to-transparent sm:translate-y-24 sm:group-hover:-translate-y-0 transition-all"> 
+                    <p class="text-xl text-white opacity-100 font-semibold">Prestasi Sobu</p>
+                    <a class="text-white font-plusJakarta font-light text-sm underline" href="#">Baca selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Announcement and agenda section -->
+    <section id="announcement-and-agenda" class="container mx-auto sm:px-4 sm:mt-12">
+        <div class="sm:flex sm:gap-8">
+            <div class="w-full bg-slate-100 shadow-lg mb-12 sm:mb-0 sm:w-1/2">
+                <div class="w-full p-4 bg-primary border-b-2 border-b-yellow-400">
+                    <h2 class="font-playfair text-3xl font-semibold text-white">Pengumuman</h2>
+                </div>
+                <ul class="w-full h-auto divide-y-2 px-4">
+                    <li class="py-4">
+                        <a class="text-base font-plusJakarta font-semibold block mb-2" href="#">Hasil Seleksi Wawancara Peserta Magang Humas Unila Batch 1.0</a>
+                        <p class="text-sm">20 Maret 2023</p>
+                    </li>
+                    <li class="py-4">
+                        <a class="text-base font-plusJakarta font-semibold block mb-2" href="#">Libur Nasional dan Cuti Bersama Tahun 2023</a>
+                        <p class="text-sm">20 Maret 2023</p>
+                    </li>
+                    <li class="py-4">
+                        <a class="text-base font-plusJakarta font-semibold block mb-2" href="#">Teknokra Akan Gelar Diskusi Publik, Bentuk Penyadaran Posisi Persma</a>
+                        <p class="text-sm">10 Maret 2023</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Agenda -->
+            <div class="w-full bg-slate-100 shadow-lg sm:w-1/2">
+                <div class="w-full p-4 bg-primary border-b-2 border-b-yellow-400">
+                    <h2 class="font-playfair text-3xl font-semibold text-white">Agenda</h2>
+                </div>
+                <ul class="w-full h-auto divide-y-2 px-4">
+                    <li class="py-4">
+                        <a class="text-base font-plusJakarta font-semibold block mb-2" href="#">Wisuda Periode IV Mei 2023</a>
+                        <p class="text-sm">20 Maret 2023</p>
+                    </li>
+                    <li class="py-4">
+                        <a class="text-base font-plusJakarta font-semibold block mb-2" href="#">Libur Nasional dan Cuti Bersama Tahun 2023</a>
+                        <p class="text-sm">20 Maret 2023</p>
+                    </li>
+                    <li class="py-4">
+                        <a class="text-base font-plusJakarta font-semibold block mb-2" href="#">Teknokra Akan Gelar Diskusi Publik, Bentuk Penyadaran Posisi Persma</a>
+                        <p class="text-sm">10 Maret 2023</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="w-full bg-primary pt-12 mt-12">
+        <div class="!text-white container mx-auto px-4 space-y-8 sm:space-y-0 sm:flex sm:gap-8">
+            <div class="sm:w-2/5">
+                <img class="mb-4" src="../assets/LOGO-UNILA-HITAM 1.png" alt="Logo Unila" style="width: 8rem">
+                <div class="mb-4">
+                    <p class="font-playfair">UNIVERSITAS LAMPUNG</p>
+                    <p class="font-playfair">Bersinergi dan Berinovasi demi Negeri</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="font-light text-sm">Jl. Prof. Dr. Sumantri Brojonegoro No. 1
+                    <br>Bandar Lampung, Lampung 35145</p>
+                    <p class="font-light text-sm"><i class="fa-solid fa-phone mr-2"></i>+62 721 702673</p>
+                    <p class="font-light text-sm"><i class="fa-solid fa-fax mr-2"></i>+62 721 702767</p>
+                    <p class="font-light text-sm"><i class="fa-solid fa-envelope mr-2"></i>humas@kpa.unila.ac.id</p>
+                </div>
+            </div>
+            <div class="sm:w-1/5">
+                <h5 class="font-plusJakarta font-semibold mb-2">LEMBAGA DAN BIRO</h5>
+                <ul class="space-y-2">
+                    <li><a href="#">BAK</a></li>
+                    <li><a href="#">BPHM</a></li>
+                    <li><a href="#">BUK</a></li>
+                    <li><a href="#">LP2M</a></li>
+                    <li><a href="#">LP3M</a></li>
+                </ul>
+            </div>
+            <div class="sm:w-1/5">
+                <h5 class="font-plusJakarta font-semibold mb-2">KERJASAMA</h5>
+                <ul class="space-y-2">
+                    <li><a href="#">International Office</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Kerjasama Dalam Negeri</a></li>
+                </ul>
+            </div>
+            <div class="sm:w-1/5">
+                <h5 class="font-plusJakarta font-semibold mb-2">BERKUNJUNG</h5>
+                <ul class="space-y-2">
+                    <li><a href="#">Peta Kampus</a></li>
+                    <li><a href="#">Pengumuman</a></li>
+                    <li><a href="#">Agenda</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full mt-12 bg-secondary">
+            <p class="text-center font-light text-sm text-white py-2">© 2023 UNIVERSITAS LAMPUNG</p>
+        </div>
+    </footer>
+</body>
+</html>
