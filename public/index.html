@@ -13,14 +13,14 @@
     <title>Universitas Lampung</title>
 </head>
 <body class="overflow-x-hidden scroll-smooth">
-    <div class="fixed bottom-8 right-8 z-50 h-16 w-16 flex items-center justify-center hover:cursor-pointer rounded-full bg-yellow-400 shadow-lg group">
+    <div class="fixed bottom-8 right-8 z-50 h-16 w-16 flex items-center justify-center hover:cursor-pointer rounded-full bg-tertiary shadow-lg group">
         <p class="text-xs text-center absolute opacity-0 group-hover:opacity-100 group-hover:block transition-all leading-none">BANTUAN</p>
         <i class="fa-solid fa-phone-volume absolute group-hover:opacity-0 transition-all"></i>
     </div>
     <header class="bg-primary absolute top-0 left-0 w-full flex items-center z-20">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-[5%]">
             <div class="flex items-center justify-between relative">
-                <a class="px-4 py-1 flex items-center gap-1 bg-secondary" href="#">
+                <a class="px-4 py-2 flex items-center gap-1 bg-secondary" href="index.html">
                     <img class="w-[4rem]" src="../assets/LOGO-UNILA-HITAM 1.png" alt="Logo Universitas Lampung">
                     <div>
                         <p class="font-playfair text-white text-center text-sm sm:text-base">UNIVERSITAS</p>
@@ -28,11 +28,30 @@
                     </div>
                 </a>
                 <div class="flex items-center px-4">
-                    <button id="nav-btn" name="nav-btn" type="button" class="block absolute right-4">
+                    <button id="nav-btn" name="nav-btn" type="button" class="block absolute right-4 lg:hidden">
                         <span class="nav-btn-line origin-top-left transition duration-300 ease-in-out"></span>
                         <span class="nav-btn-line transition duration-300 ease-in-out"></span>
                         <span class="nav-btn-line origin-bottom-left transition duration-300 ease-in-out"></span>
                     </button>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg w-full top-full right-0 lg:block lg:static lg:bg-transparent lg:max-w-full">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="about.html" class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white">Tentang Unila</a>
+                            </li>
+                            <li class="group">
+                                <a href="#" class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary  lg:text-white">Akademik</a>
+                            </li>
+                            <li class="group">
+                                <a href="#" class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white">Penerimaan</a>
+                            </li>
+                            <li class="group">
+                                <a href="#" class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white">Mahasiswa</a>
+                            </li>
+                            <li class="group">
+                                <a href="#" class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white">Penelitian</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -227,10 +246,10 @@
         </div>
     </section>
     <!-- Announcement and agenda section -->
-    <section id="announcement-and-agenda" class="container mx-auto sm:px-[5%] sm:mt-12">
+    <section id="announcement-and-agenda" class="container mx-auto sm:px-[5%] mt-12">
         <div class="sm:flex sm:gap-8">
             <div id="pengumuman"class="w-full bg-slate-100 shadow-lg mb-12 sm:mb-0 sm:w-1/2">
-                <div class="w-full p-4 bg-primary border-b-2 border-b-yellow-400">
+                <div class="w-full p-4 bg-primary border-b-2 border-b-tertiary">
                     <h2 class="font-playfair text-3xl font-semibold text-white">Pengumuman</h2>
                 </div>
                 <ul class="w-full h-auto divide-y-2 px-4">
@@ -250,7 +269,7 @@
             </div>
             <!-- Agenda -->
             <div id="agenda" class="w-full bg-slate-100 shadow-lg sm:w-1/2">
-                <div class="w-full p-4 bg-primary border-b-2 border-b-yellow-400">
+                <div class="w-full p-4 bg-primary border-b-2 border-b-tertiary">
                     <h2 class="font-playfair text-3xl font-semibold text-white">Agenda</h2>
                 </div>
                 <ul class="w-full h-auto divide-y-2 px-4">
