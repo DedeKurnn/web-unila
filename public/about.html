@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/39a854cbd3.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
     <title>Tentang Unila</title>
 </head>
 <body>
@@ -64,7 +66,7 @@
                 <img src="../assets/rectorate-front.jpg" alt="Rectorate" class="object-cover w-screen">
             </div>
             <div class="px-[5%] md:w-1/2">
-                <h1 class="text-left text-5xl text-primary underline decoration-solid decoration-tertiary decoration-2 underline-offset-8 py-4">Tentang Universitas Lampung</h1>
+                <h1 class="text-left sm:text-5xl text-primary underline decoration-solid decoration-tertiary decoration-2 underline-offset-8 py-4">Tentang Universitas Lampung</h1>
                 <p class="mt-4">Universitas Lampung memiliki sejarah yang panjang serta identitas sebagai universitas unggul dalam riset dan pengabdian kepada masyarakat. </p>
             </div>
         </div>
@@ -80,45 +82,196 @@
             <a class="block mt-8 w-fit font-normal text-white font-plusJakarta py-1 border-b-2 border-b-tertiary hover:text-tertiary" href="#">Baca selengkapnya</a>
         </div>
     </section>
-    <section id="content" class="container mx-auto sm:px-[5%] my-8 py-8 md:flex md:flex-row-reverse md:gap-8">
-        <aside class="tab-nav mb-4 md:w-1/3">
+    <section id="content" class="container mx-auto px-[5%] my-8 py-8 md:flex md:flex-row-reverse gap-8 leading-relaxed">
+        <div role="tablist" aria-label="tabs" class="tab-nav mb-4 md:w-1/3">
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-primary font-plusJakarta bg-primary bg-opacity-20 hover:bg-opacity-30 text-base px-4 py-2.5 text-center justify-between inline-flex items-center w-full" type="button">Menu
                 <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <!-- Dropdown menu -->
-            <div id="dropdown" class="z-10 hidden h-0 bg-white divide-y divide-gray-100 rounded-lg shadow w-full">
-                <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
-                <li>
-                    <a href="#" class="block px-4 py-2 font-plusJakarta hover:bg-gray-100 ">Sejarah Unila</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 font-plusJakarta hover:bg-gray-100 ">Visi dan Misi</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 font-plusJakarta hover:bg-gray-100 ">Identitas Unila</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 font-plusJakarta hover:bg-gray-100 ">Struktur Organisasi</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 font-plusJakarta hover:bg-gray-100 ">Berkunjung ke Unila</a>
-                </li>
+            <div id="dropdown" class="z-10 hidden md:block bg-white divide-y divide-gray-100 rounded-lg shadow w-full">
+                <ul class="py-2 text-base text-gray-700" aria-labelledby="dropdownDefaultButton">
+                    <li>
+                        <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0" class="tab w-full text-left block px-4 py-2 font-plusJakarta hover:bg-gray-100 ">Sejarah Unila</button>
+                    </li>
+                    <li>
+                        <button role="tab" aria-selected="true" aria-controls="panel-2" id="tab-2" tabindex="1" class="tab w-full text-left block px-4 py-2 font-plusJakarta hover:bg-gray-100 ">Visi dan Misi</button>
+                    </li>
+                    <li>
+                        <button role="tab" aria-selected="true" aria-controls="panel-3" id="tab-3" tabindex="2" class="tab w-full text-left block px-4 py-2 font-plusJakarta hover:bg-gray-100 ">Identitas Unila</button>
+                    </li>
+                    <li>
+                        <button role="tab" aria-selected="true" aria-controls="panel-4" id="tab-4" tabindex="3" class="tab w-full text-left block px-4 py-2 font-plusJakarta hover:bg-gray-100 ">Struktur Organisasi</button>
+                    </li>
+                    <li>
+                        <button role="tab" aria-selected="true" aria-controls="panel-5" id="tab-5" tabindex="4" class="tab w-full text-left block px-4 py-2 font-plusJakarta hover:bg-gray-100 ">Berkunjung ke Unila</button>
+                    </li>
                 </ul>
             </div>
-        </aside>
-        <div class="md:w-2/3">
-            <h2 class="text-xl text-primary font-semibold font-playfair leading-tight my-4 block md:text-3xl" href="#">Sejarah Universitas Lampung</h2>
-            <img src="https://www.unila.ac.id/wp-content/uploads/2013/01/unila_1960-300x271.png" alt="Unila Tahun 1960" class="mx-auto my-4">
-            <div>
-                <p class="mb-4">
-                    Keinginan mendirikan perguruan tinggi di Lampung merupakan cita-cita para tokoh masyarakat Lampung sejak tahun 1960-an, yang dimaksudkan sebagai wahana untuk mencerdaskan masyarakat pada jenjang pendidikan tinggi, karena semakin banyak putera-puteri terbaik lulusan SMA yang harus pergi ke Jawa atau Palembang untuk dapat melanjutkan studinya. Di pihak lain, Provinsi Lampung yang baru terbentuk juga sangat memerlukan tenaga lulusan perguruan tinggi dalam jumlah banyak guna melaksanakan kegiatan pembangunan di daerah ini. Cita-cita pendirian perguruan tinggi di Lampung tersebut diupayakan terwujud oleh dua panitia, yaitu:
+        </div>
+        <div class="relative md:w-2/3 h-[1600px] sm:h-[1100px] md:h-[1300px]">
+            <div role="tabpanel" id="panel-1" class="tab-panel">
+                <h2 class="text-xl text-primary font-semibold font-playfair leading-tight mb-4 block md:text-3xl" href="#">Sejarah Universitas Lampung</h2>
+                <img src="https://www.unila.ac.id/wp-content/uploads/2013/01/unila_1960-300x271.png" alt="Unila Tahun 1960" class="mx-auto my-4">
+                <div>
+                    <p class="mb-4">
+                        Keinginan mendirikan perguruan tinggi di Lampung merupakan cita-cita para tokoh masyarakat Lampung sejak tahun 1960-an, yang dimaksudkan sebagai wahana untuk mencerdaskan masyarakat pada jenjang pendidikan tinggi, karena semakin banyak putera-puteri terbaik lulusan SMA yang harus pergi ke Jawa atau Palembang untuk dapat melanjutkan studinya. Di pihak lain, Provinsi Lampung yang baru terbentuk juga sangat memerlukan tenaga lulusan perguruan tinggi dalam jumlah banyak guna melaksanakan kegiatan pembangunan di daerah ini. Cita-cita pendirian perguruan tinggi di Lampung tersebut diupayakan terwujud oleh dua panitia, yaitu:
+                    </p>
+                    <p class="mb-4">
+                        Panitia Pendirian dan Perluasan Sekolah Lanjutan (P3SL) yang berubah menjadi Panitia Pendirian dan Perluasan Sekolah Lanjutan dan Fakultas (P3SLF) diketuai oleh Zainal Abidin Pagar Alam dan Sekretaris Tjan Djiit Soe.
+                    </p>
+                    <p class="mb-4">
+                        Panitia Persiapan Pembentukan Yayasan Perguruan Tinggi Lampung (P3YPTL) diketuai oleh Nadirsjah Zaini, M.A. dan Sekretaris Hilman Hadikusuma .Kedua panitia dilebur menjadi Yayasan Pembina Perguruan Tinggi Lampung (YPPTL). Yayasan ini membentuk Fakultas Ekonomi, Hukum, dan Sosial (FEHS), berkedudukan di Jalan Hasanuddin 34, Bandarlampung.
+                    </p>
+                </div>
+            </div>
+            <div role="tabpanel" id="panel-2" class="absolute top-0 invisible opacity-0 tab-panel">
+                <h2 class="text-xl text-primary font-playfair leading-tight mb-4 block md:text-3xl" href="#">Visi dan Misi</h2>
+                <p class="mb-8">
+                    Dengan keinginan  memberikan manfaat yang berguna bagi kehidupan bangsa, seluruh keluarga besar Unila bersatu padu dalam mewujudkan visi dan misi Unila ini.
                 </p>
-                <p class="mb-4">
-                    Panitia Pendirian dan Perluasan Sekolah Lanjutan (P3SL) yang berubah menjadi Panitia Pendirian dan Perluasan Sekolah Lanjutan dan Fakultas (P3SLF) diketuai oleh Zainal Abidin Pagar Alam dan Sekretaris Tjan Djiit Soe.
-                </p>
-                <p class="mb-4">
-                    Panitia Persiapan Pembentukan Yayasan Perguruan Tinggi Lampung (P3YPTL) diketuai oleh Nadirsjah Zaini, M.A. dan Sekretaris Hilman Hadikusuma .Kedua panitia dilebur menjadi Yayasan Pembina Perguruan Tinggi Lampung (YPPTL). Yayasan ini membentuk Fakultas Ekonomi, Hukum, dan Sosial (FEHS), berkedudukan di Jalan Hasanuddin 34, Bandarlampung.
-                </p>
+                <div class="p-8 bg-primary bg-opacity-20 mb-8">
+                    <h3 class="font-playfair text-primary text-2xl text-center font-bold mb-4">Visi</h3>
+                    <blockquote class="text-center italic font-plusJakarta">
+                        Universitas Lampung menjadi <span class="font-bold">Center of Excellence</span> di tingkat Nasional dan Internasional sebagai Institusi yang kuat (BE STRONG) berlandaskan nilai-nilai luhur budaya Nasional dan Pancasila.
+                    </blockquote>
+                </div>
+                <div class="p-8 bg-primary bg-opacity-20 mb-8">
+                    <h3 class="font-playfair text-primary text-2xl text-center font-bold mb-4">Misi</h3>
+                    <blockquote class="text-center italic font-plusJakarta">
+                        Menerapkan Tridharma Perguruan Tinggi yang berkualitas guna menghasilkan sumber daya manusia yang adaptif dan fleksibel terhadap perubahan serta inovasi yang bermanfaat bagi peningkatan daya saing bangsa.
+                    </blockquote>
+                </div>
+                <div>
+                    <h3 class="font-playfair text-primary text-2xl text-center font-bold mb-4">Tujuan</h3>
+                    <ol class="list-decimal font-plusJakarta ml-6">
+                        <li>
+                            <ol class="list-[lower-alpha] ml-6">
+                                <li>
+                                    Menghasilkan lulusan yang bermutu dan berdaya saing tinggi yang cepat diserap pasar tenaga kerja dan mampu menciptakan lapangan kerja bagi dirinya dan orang lain
+                                </li>
+                                <li>
+                                    Menghasilkan ipteks unggulan/baru yang terpublikasikan pada jurnal-jurnal terakreditasi di dalam dan luar negeri serta diperolehnya HaKI untuk ipteks baru tersebut
+                                </li>
+                                <li>
+                                    Meningkatkan daya saing dan kesejahteraan masyarakat dengan melakukan pengabdian kepada masyarakat yang bermutu dan inovatif serta berbasis ipteks ungggulan/baru
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            Meningkatkan manajemen organisasi dalam bidang akademik, keuangan, dan sumber daya manusia menuju tata kelola yang baik
+                        </li>
+                        <li>
+                            Meningkatkan aksesibilitas bagi seluruh lapisan masyarakat untuk memperoleh pelayanan pendidikan tinggi di unila
+                        </li>
+                        <li>
+                            Meningkatkan kerja sama dengan pemerintah pusat, provinsi, kebupaten/kota, dunia usaha, lembaga swadaya masyarakat (LSM), dan pemangku kepentingan lainnya; baik dalam maupun luar negeri.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div role="tabpanel" id="panel-3" class="absolute top-0 invisible opacity-0 tab-panel">
+                <h2 class="text-xl text-primary font-semibold font-playfair leading-tight my-4 block md:text-3xl" href="#">Identitas Unila</h2>
+                <img src="../assets/Logo_UnivLampung.png" alt="Logo Universitas Lampung" class="w-1/2 mx-auto my-8">
+                <div>
+                    <h3 class="font-playfair text-primary text-2xl font-semibold mb-4">Lambang Universitas Lampung</h3>
+                    <p class="font-semibold mb-4">
+                        Unversitas Lampung memiliki lambang berbentuk perisai persegi lima berwarna dasar biru muda dengan kode warna RGB 1E-90-FF yang di dalamnya terdapat :
+                    </p>
+                    <ol class="list-decimal font-plusJakarta text-base mb-4 ml-4">
+                        <li>
+                            Tulisan Universitas Lampung berwarna hitam dengan kode warna RGB 00 00 00;
+                        </li>
+                        <li>
+                            lidah api berwarna merah dengan kode warna RGB FF 00 00, bejana penopang berwarna abu-abu dengan kode warna RGB 2F 4F 4F D7, dan obor dengan tangkai berwarna hitam dengan kode warna RGB 00 00 00;
+                        </li>
+                        <li>
+                            mahkota siger berwarna kuning keemasan dengan kode warna RGB FF D7;
+                        </li>
+                        <li>
+                            pintu gerbang berwarna kuning keemasan dengan kode warna RGB FF D7;
+                        </li>
+                        <li>
+                            buku terbuka berwarna kuning keemasan dengan kode warna RGB FF D7;
+                        </li>
+                        <li>
+                            meja pepadun berwarna kuning keemasan dengan kode warna RGB FF D7; dan lima lembar daun lada berwarna hijau dengan kode warna RGB 00 80 00.
+                        </li>
+                    </ol>
+                    <p class="font-semibold mb-4">
+                        Lambang sebagaimana dimaksud pada ayat (1) memiliki makna sebagai berikut:
+                    </p>
+                    <ol class="list-decimal font-plusJakarta ml-4">
+                        <li>
+                            Perisai persegi lima berwarna dasar biru muda memiliki makna alam kehidupan perguruan tinggi;
+                        </li>
+                        <li>
+                            <ul class="list-[lower-alpha] ml-6">
+                                <li>
+                                    lidah api berwarna merah,
+                                </li>
+                                <li>
+                                    bejana penopang berwarna abu-abu dan
+                                </li>
+                                <li>
+                                    obor dengan tangkai berwarna hitam dan memiliki makna penerang dalam kegelapan;
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            mahkota siger berwarna kuning keemasan memiliki makna sifat harga diri;
+                        </li>
+                        <li>
+                            pintu gerbang berwarna kuning keemasan memiliki makna tempat lahir dan berkembang manusia terdidik;
+                        </li>
+                        <li>
+                            buku terbuka berwarna kuning keemasan memiliki makna sumber ilmu pengetahuan, teknologi, dan seni yang bermanfaat bagi kehidupan manusia;
+                        </li>
+                        <li>
+                            meja pepadun berwarna kuning keemasan memiliki makna tempat bermusyawarah; dan
+                        </li>
+                        <li>
+                            lima lembar daun lada berwarna hijau memiliki makna kemakmuran.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div role="tabpanel" id="panel-4" class="absolute top-0 invisible opacity-0 tab-panel">
+                <h2 class="text-xl text-primary font-semibold font-playfair leading-tight my-4 block md:text-3xl" href="#">Struktur Organisasi</h2>
+                <img src="http://www.unila.ac.id/wp-content/uploads/2013/01/Stuktur-Organisasi-Unila-2017.jpg" alt="Struktur Organisasi" class="w-full mx-auto my-8">
+            </div>
+            <div role="tabpanel" id="panel-5" class="absolute top-0 invisible opacity-0 tab-panel">
+                <h2 class="text-xl text-primary font-semibold font-playfair leading-tight my-4 block md:text-3xl" href="#">Berkunjung ke Universitas Lampung</h2>
+                <div class="mb-8">
+                    <p class="mb-4">
+                        Universitas Lampung berada di propinsi Lampung yang letaknya di ujung selatan Pulau Sumatera. Oleh karenanya Lampung merupakan ‘Gerbang Sumatera’ karena daerah penghubung antara Pulau Sumatera dan Pulau Jawa melalui jalur darat dan laut. Unila terletak di Jl.Prof. Sumantri Brojonegoro No.1, Gedong  Meneng, Bandar Lampung. Wilayahnya berkisar 100 meter dari Terminal Induk Rajabasa, Bandar Lampung. Lokasi ini sangat mudah dijangkau. Untuk dapat berkunjung ke Universitas Lampung dapat menggunakan jalur darat-laut, dan udara. Bandar udara di Lampung adalah Bandara Radin Inten II, jadi perjalanan menuju Lampung melalui bandara tersebut. Terminal di Lampung adalah Terminal Rajabasa, jadi perjalanan darat dapat menuju ke terminal tersebut.
+                    </p>
+                    <div class="mb-4">
+                        <h3 class="font-plusJakarta font-semibold">Dari Luar Indonesia</h3>
+                        <p class="mb-4">
+                            Home → Bandara Internasional Soekarno Hatta (Jakarta, Indonesia) →Bandara Radin Inten II (Lampung) → Unila
+                        </p>
+                        <p class="font-semibold">
+                            Alternatif
+                        </p>
+                        <p>
+                            Home → Bandara Internasional Soekarno Hatta (Jakarta, Indonesia) →Terminal Kampung Rambutan → Pelabuhan Merak → Pelabuhan Bakauheni → Unila
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="font-plusJakarta font-semibold">Dari Jakarta</h3>
+                        <p class="mb-4">
+                            Selain menggunakan bis umum jurusan Jakarta- Merak yang harus berganti-ganti kendaraan, terdapat jasa transportasi langsung tanpa berganti kendaraan (kendaraan masuk dalam kapal laut Merak-Bakauheni)
+                        </p>
+                        <p class="mb-4">
+                            Bis DAMRI Sta. Gambir → Tanjungkarang
+                        </p>
+                        <p>
+                            Taxi Travel Jakarta → Lampung (Langsung jemput dan antar ke tujuannya)
+                        </p>
+                    </div>
+                </div>
+                <h3 class="font-playfair text-primary text-2xl font-bold mb-4">Peta Kampus</h3>
+                <div id="osm-map" class="-z-10"></div>
             </div>
         </div>
     </section>
