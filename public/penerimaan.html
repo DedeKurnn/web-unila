@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cust-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/39a854cbd3.js" crossorigin="anonymous"></script>
+    <title>Universitas Lampung</title>
+</head>
+<body>
+    <div class="fixed bottom-8 right-8 z-50 h-16 w-16 flex items-center justify-center hover:cursor-pointer rounded-full bg-tertiary shadow-lg group">
+        <p class="text-xs text-center absolute opacity-0 group-hover:opacity-100 group-hover:block transition-all leading-none">BANTUAN</p>
+        <i class="fa-solid fa-phone-volume absolute group-hover:opacity-0 transition-all"></i>
+    </div>
+    <header class="bg-primary absolute top-0 left-0 w-full flex items-center z-20">
+        <div class="container mx-auto px-[5%]">
+            <div class="flex items-center justify-between relative">
+                <a class="px-4 py-2 flex items-center gap-1 bg-secondary" href="index.html">
+                    <img class="w-[4rem]" src="../assets/LOGO-UNILA-HITAM 1.png" alt="Logo Universitas Lampung">
+                    <div>
+                        <p class="font-playfair text-white text-center text-sm sm:text-base">UNIVERSITAS</p>
+                        <p class="font-playfair text-white text-center text-sm sm:text-base">LAMPUNG</p>
+                    </div>
+                </a>
+                <div class="flex items-center px-4">
+                    <button id="nav-btn" name="nav-btn" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="nav-btn-line origin-top-left transition duration-300 ease-in-out"></span>
+                        <span class="nav-btn-line transition duration-300 ease-in-out"></span>
+                        <span class="nav-btn-line origin-bottom-left transition duration-300 ease-in-out"></span>
+                    </button>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg w-full top-full right-0 lg:block lg:static lg:bg-transparent lg:max-w-full">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="about.html" class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white">Tentang Unila</a>
+                            </li>
+                            <li class="group">
+                                <a href="akademik.html" class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary  lg:text-white">Akademik</a>
+                            </li>
+                            <li class="group">
+                                <a href="#" class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white">Penerimaan</a>
+                            </li>
+                            <li class="group">
+                                <a href="kemahasiswaan.html" class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white">Mahasiswa</a>
+                            </li>
+                            <li class="group">
+                                <a href="penelitian.html" class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white">Penelitian</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Home section -->
+    <section id="home" class="mt-12">
+        <div class="md:flex md:flex-row-reverse md:items-center leading-normal">
+            <div class="w-screen object-cover overflow-hidden md:w-1/2">
+                <img src="../assets/utbk.jpeg" alt="Rectorate" class="object-cover w-screen">
+            </div>
+            <div class="px-[5%] md:w-1/2">
+                <h1 class="text-left sm:text-5xl text-primary underline decoration-solid decoration-tertiary decoration-2 underline-offset-8 py-4">Penerimaan</h1>
+                <p class="mt-4">Universitas Lampung menyediakan berbagai jalur masuk yaitu Seleksi Nasional Berbasis Tes (SNBT), Seleksi Nasional Berbasis Prestasi (SNBP), Seleksi Masuk Mandiri PTN Barat (SMMPTN Barat) dan Jalur Simanila yang dapat dipilih oleh calon mahasiswa.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-full bg-primary pt-12 mt-12">
+        <div class="!text-white container mx-auto px-[5%] space-y-8 sm:space-y-0 sm:flex sm:gap-8">
+            <div class="sm:w-2/5">
+                <img class="mb-4" src="../assets/LOGO-UNILA-HITAM 1.png" alt="Logo Unila" style="width: 8rem">
+                <div class="mb-4">
+                    <p class="font-playfair">UNIVERSITAS LAMPUNG</p>
+                    <p class="font-playfair">Bersinergi dan Berinovasi demi Negeri</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="font-light text-sm mb-2">Jl. Prof. Dr. Sumantri Brojonegoro No. 1
+                    <br>Bandar Lampung, Lampung 35145</p>
+                    <a class="block font-light text-sm" href="tel:+62721702673"><i class="fa-solid fa-phone mr-2"></i>+62 721 702673</a>
+                    <a class="block font-light text-sm" href="tel:+62721702767"><i class="fa-solid fa-fax mr-2"></i>+62 721 702767</a>
+                    <a class="block font-light text-sm" href="mailto:humas@kpa.unila.ac.id"><i class="fa-solid fa-envelope mr-2"></i>humas@kpa.unila.ac.id</a>
+                </div>
+            </div>
+            <div class="sm:w-1/5">
+                <h5 class="font-plusJakarta font-semibold mb-2">LEMBAGA DAN BIRO</h5>
+                <ul class="space-y-2">
+                    <li><a href="https://bak.unila.ac.id/">BAK</a></li>
+                    <li><a href="https://bphm.unila.ac.id/">BPHM</a></li>
+                    <li><a href="https://buk.unila.ac.id/">BUK</a></li>
+                    <li><a href="https://lppm.unila.ac.id/">LPPM</a></li>
+                    <li><a href="https://lp3m.unila.ac.id/">LP3M</a></li>
+                </ul>
+            </div>
+            <div class="sm:w-1/5">
+                <h5 class="font-plusJakarta font-semibold mb-2">KERJASAMA</h5>
+                <ul class="space-y-2">
+                    <li><a href="https://io.unila.ac.id">International Office</a></li>
+                    <li><a href="https://www.unila.ac.id/alumni-dan-mitra/">Alumni</a></li>
+                    <li><a href="https://www.unila.ac.id/kerjasama/">Kerjasama Dalam Negeri</a></li>
+                </ul>
+            </div>
+            <div class="sm:w-1/5">
+                <h5 class="font-plusJakarta font-semibold mb-2">BERKUNJUNG</h5>
+                <ul class="space-y-2">
+                    <li><a href="https://goo.gl/maps/nSG4SUNrbzZT1hiU7" target="_blank">Peta Kampus</a></li>
+                    <li><a href="#pengumuman">Pengumuman</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full mt-12 bg-secondary">
+            <p class="text-center font-light text-sm text-white py-2">© 2023 UNIVERSITAS LAMPUNG</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
