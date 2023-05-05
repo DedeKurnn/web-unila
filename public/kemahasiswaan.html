@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cust-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/39a854cbd3.js" crossorigin="anonymous"></script>
+    <title>Universitas Lampung</title>
+</head>
+<body>
+    <div class="fixed bottom-8 right-8 z-50 h-16 w-16 flex items-center justify-center hover:cursor-pointer rounded-full bg-tertiary shadow-lg group">
+        <p class="text-xs text-center absolute opacity-0 group-hover:opacity-100 group-hover:block transition-all leading-none">BANTUAN</p>
+        <i class="fa-solid fa-phone-volume absolute group-hover:opacity-0 transition-all"></i>
+    </div>
+    <header class="bg-primary absolute top-0 left-0 w-full flex items-center z-20">
+        <div class="container mx-auto px-[5%]">
+            <div class="flex items-center justify-between relative">
+                <a class="px-4 py-2 flex items-center gap-1 bg-secondary" href="index.html">
+                    <img class="w-[4rem]" src="../assets/LOGO-UNILA-HITAM 1.png" alt="Logo Universitas Lampung">
+                    <div>
+                        <p class="font-playfair text-white text-center text-sm sm:text-base">UNIVERSITAS</p>
+                        <p class="font-playfair text-white text-center text-sm sm:text-base">LAMPUNG</p>
+                    </div>
+                </a>
+                <div class="flex items-center px-4">
+                    <button id="nav-btn" name="nav-btn" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="nav-btn-line origin-top-left transition duration-300 ease-in-out"></span>
+                        <span class="nav-btn-line transition duration-300 ease-in-out"></span>
+                        <span class="nav-btn-line origin-bottom-left transition duration-300 ease-in-out"></span>
+                    </button>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg w-full top-full right-0 lg:block lg:static lg:bg-transparent lg:max-w-full">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="about.html" class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white">Tentang Unila</a>
+                            </li>
+                            <li class="group">
+                                <a href="akademik.html" class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary  lg:text-white">Akademik</a>
+                            </li>
+                            <li class="group">
+                                <a href="penerimaan.html" class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white">Penerimaan</a>
+                            </li>
+                            <li class="group">
+                                <a href="#" class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white">Mahasiswa</a>
+                            </li>
+                            <li class="group">
+                                <a href="penelitian.html" class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white">Penelitian</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Home section -->
+    <section id="home" class="mt-12">
+        <div class="md:flex md:flex-row-reverse md:items-center leading-normal">
+            <div class="w-screen object-cover overflow-hidden md:w-1/2">
+                <img src="../assets/Orientasi-Mahasiswa-Asing-Unila-2022-d.jpeg" alt="Rectorate" class="object-cover w-screen">
+            </div>
+            <div class="px-[5%] md:w-1/2">
+                <h1 class="text-left sm:text-5xl text-primary underline decoration-solid decoration-tertiary decoration-2 underline-offset-8 py-4">Kemahasiswaan</h1>
+                <p class="mt-4 mb-8">Melalui berbagai kegiatan yang diselenggarakan, kemahasiswaan Universitas Lampung turut berkontribusi dalam membangun karakter mahasiswa yang berkualitas dan siap menghadapi tantangan di masa depan. Selain itu, kemahasiswaan juga memberikan dukungan dan fasilitas yang dibutuhkan oleh mahasiswa dalam mengembangkan potensi diri dan bakat yang dimilikinya. </p>
+            </div>
+        </div>
+    </section>
+    <!-- Kegiatan Mahasiswa -->
+    <section id="kegiatan-mahasiswa" class="bg-secondary leading-relaxed">
+        <div class="container px-[5%] mx-auto md:flex  md:flex-row-reverse md:items-center md:mt-0 gap-8 py-8 md:py-12">
+            <div class="mt-4 md:w-1/2">
+                <p class="text-base font-semibold text-slate-400 my-4 sm:mt-0">Acara Mahasiswa</p>
+                <h2 class="text-xl text-white font-semibold font-playfair leading-tight my-4 block md:text-3xl">PSM Sukses Gelar 5th Annual Concert Bertajuk Agatheaphoria</h2>
+                <p class="text-white font-normal mt-2">(Unila): Unit Kegiatan Mahasiswa (UKM) Paduan Suara Mahasiswa (PSM) Universitas Lampung (Unila) sukses menggelar 5th Annual Concert Paduan Suara Mahasiswa di Aula Graha Bintang Universitas Malahayati, Minggu, 30 Oktober 2022.
+
+                    Konser bertema “Agatheaphoria: One Night to Spread the Love” ini dibuka oleh Kepala Bidang Kebudayaan Dinas Pendidikan dan Kebudayaan Provinsi Lampung Dra. Heni Astuti, M.IP.
+                </p>
+                <a class="read-more flex items-center gap-4 mt-4 group pb-4" href="#">
+                    <div class="px-4 py-3 rounded-full text-white bg-white bg-opacity-20 group-hover:bg-white group-hover:text-black transition-all duration-300">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <p class="text-white font-semibold group-hover:underline">Baca selengkapnya</p>
+                </a>
+            </div>
+            <div class="mx-auto md:w-1/2 relative">
+                <img src="../assets/UKM-PSM-Unila-Sukses-Gelar-5th-Annual-Concert-PSM-b.jpeg" alt="UKM-PSM-Unila" class="object-cover mx-auto">
+            </div>
+        </div>
+    </section>
+    <!-- Navigation -->
+    <section class="container mx-auto px-[5%] my-12">
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+            <div class="aspect-square w-full h-full bg-tertiary flex justify-center items-center">
+                <div>
+                    <svg class="mb-2" width="83" height="89" viewBox="0 0 83 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M41.125 30.4375V42.9375M17.6875 58.5625V46.0625H64.5625V58.5625M30.1875 5.4375H52.0625V27.3125H30.1875V5.4375ZM55.1875 61.6875H77.0625V83.5625H55.1875V61.6875ZM5.1875 61.6875H27.0625V83.5625H5.1875V61.6875Z" stroke="#06413A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    <a href="kemahasiswaan/organisasi.html" class="text-primary block text-center font-plusJakarta text-lg font-bold">Organisasi</a>
+                </div>
+            </div>
+            <div class="aspect-square w-full h-full bg-tertiary flex justify-center items-center">
+                <div>
+                    <svg class="mb-2" width="88" height="89" viewBox="0 0 88 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M72.1055 10.125V0.75H15.875V10.125H0.25V17.5469C0.25 23.7969 2.10547 29.8105 5.47656 34.4629C8.08008 38.0566 12.1504 40.5371 15.8105 41.7305C16.873 47.4512 19.7559 52.8887 25.6133 57.3223C29.9102 60.5762 35.0762 62.9609 39.7031 63.9355V79.6562H25.25V88.25H62.75V79.6562H48.2969V63.9355C52.9238 62.959 58.0879 60.5762 62.3867 57.3223C68.2461 52.8887 71.127 47.4512 72.1895 41.7305C75.8496 40.5371 79.9199 38.0566 82.5234 34.4629C85.8945 29.8105 87.75 23.7969 87.75 17.5469V10.125H72.1055ZM12.4375 29.4219C10.3516 26.5547 9.08399 22.7031 8.875 18.7188H15.875V31.877C15.1055 31.6543 13.3516 30.6816 12.4375 29.4219ZM75.5625 29.4219C74.6641 30.7129 73.2969 31.8789 72.125 31.8789C72.125 27.5039 72.125 22.8379 72.1152 18.7188H79.127C78.916 22.7031 77.5938 26.5117 75.5625 29.4219Z" fill="#06413A"/>
+                        </svg>
+                    <a href="https://www.unila.ac.id/prestasi-mahsiswa-di-bidang-akademik-dan-non-akademik-2016-2017/" class="text-primary block text-center font-plusJakarta text-lg font-bold">Prestasi</a>
+                </div>
+            </div>
+            <div class="aspect-square w-full h-full bg-tertiary flex justify-center items-center">
+                <div>
+                    <svg class="mb-2" width="92" height="83" viewBox="0 0 92 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M46.0001 74.6666H54.3334V20.5L80.9751 31.9166C81.7251 32.2382 82.3642 32.7728 82.813 33.4543C83.2619 34.1357 83.5008 34.934 83.5001 35.75V74.6666H91.8334V83H0.166748V74.6666H8.50008V19.0416C8.49998 18.2355 8.73375 17.4466 9.17306 16.7706C9.61236 16.0946 10.2383 15.5606 10.9751 15.2333L43.0709 0.970813C43.3881 0.82989 43.7355 0.770456 44.0815 0.797909C44.4275 0.825363 44.7612 0.938834 45.0522 1.12801C45.3432 1.3172 45.5824 1.57609 45.7479 1.88118C45.9134 2.18627 46.0001 2.52788 46.0001 2.87498V74.6666Z" fill="#06413A"/>
+                        </svg>
+                    <a href="#" class="text-primary block text-center font-plusJakarta text-lg font-bold">Fasilitas</a>
+                </div>
+            </div>
+            <div class="aspect-square w-full h-full bg-tertiary flex justify-center items-center">
+                <div>
+                    <svg class="mb-2" width="64" height="71" viewBox="0 0 64 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.99993 71C3.81938 71 2.8291 70.6 2.0291 69.8C1.2291 69 0.830489 68.0111 0.833266 66.8333V4.33331C0.833266 3.15275 1.23327 2.16247 2.03327 1.36247C2.83327 0.562474 3.82216 0.163863 4.99993 0.16664H34.8958C35.868 0.16664 36.736 0.47914 37.4999 1.10414C38.2638 1.72914 38.7499 2.52775 38.9583 3.49997L39.9999 8.49997H59.1666C60.3472 8.49997 61.3374 8.89997 62.1374 9.69997C62.9374 10.5 63.336 11.4889 63.3333 12.6666V46C63.3333 47.1805 62.9333 48.1708 62.1333 48.9708C61.3333 49.7708 60.3444 50.1694 59.1666 50.1666H37.6041C36.6319 50.1666 35.7638 49.8541 34.9999 49.2291C34.236 48.6041 33.7499 47.8055 33.5416 46.8333L32.4999 41.8333H9.1666V66.8333C9.1666 68.0139 8.7666 69.0041 7.9666 69.8041C7.1666 70.6041 6.17771 71.0028 4.99993 71Z" fill="#06413A"/>
+                        </svg>
+                    <a href="https://www.lapor.go.id/" class="text-primary block text-center font-plusJakarta text-lg font-bold">Lapor</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="tentang-unila" class="container sm:relative mx-auto px-[5%] my-24">
+        <!-- Hidup di Unila -->
+        <div class="md:flex md:flex-row-reverse md:gap-20 items-center justify-center my-12">
+            <div class="object-cover overflow-hidden aspect-[4/3] md:w-1/2">
+                <img class="w-full h-full object-cover hover:scale-105 transition-all duration-300" src="../assets/rusun.jpg" alt="Unila dan Dewas BLU Gelar Rapat">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-xl text-primary font-semibold font-playfair leading-tight my-4 block md:text-3xl" href="#">Hidup di Unila</h2>
+                <p>Kehidupan mahasiswa di Universitas Lampung sangatlah beragam dan menarik. Mahasiswa dapat menikmati berbagai fasilitas yang disediakan oleh kampus, seperti asrama mahasiswa yang nyaman dan aman untuk tempat tinggal. Selain itu, terdapat juga halte shuttle bus yang memudahkan mahasiswa untuk berpindah tempat dari dan ke kampus. Terminal Rajabasa yang terletak dekat kampus juga menjadi alternatif transportasi bagi mahasiswa yang ingin berpergian ke luar kota. Selain itu, mahasiswa juga dapat tinggal diberbagai pilihan kost di Kampung Baru.</p>
+                <a class="read-more flex items-center gap-4 mt-4 group w-fit" href="#">
+                    <div class="px-4 py-3 rounded-full bg-emerald-100 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <p class="text-primary font-semibold group-hover:underline">Baca selengkapnya</p>
+                </a>
+            </div>
+        </div>
+        <!-- Prestasi Sobu -->
+        <div class="md:flex sm:gap-20 items-center justify-center my-12">
+            <div class="object-cover overflow-hidden aspect-[4/3] md:w-1/2">
+                <img class="w-full h-full object-cover hover:scale-105 transition-all duration-300" src="../assets/arif-ferbiansyah.jpeg" alt="Unila dan Dewas BLU Gelar Rapat">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-xl text-primary font-semibold font-playfair leading-tight my-4 block md:text-3xl" href="#">Prestasi Sobu</h2>
+                <p>Mahasiswa Universitas Lampung telah banyak mencapai prestasi di berbagai bidang. Mereka berhasil meraih juara dalam berbagai lomba dan kompetisi di tingkat nasional maupun internasional, baik dalam bidang akademik, olahraga, maupun seni dan budaya. Selain itu, mahasiswa juga aktif dalam kegiatan sosial dan lingkungan, seperti program pengabdian masyarakat dan kampanye peduli lingkungan. Prestasi mahasiswa ini merupakan bukti dari kualitas pendidikan dan pengembangan karakter yang dijalankan oleh Universitas Lampung.</p>
+                <a class="read-more flex items-center gap-4 mt-4 group w-fit" href="#">
+                    <div class="px-4 py-3 rounded-full bg-emerald-100 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <p class="text-primary font-semibold group-hover:underline">Baca selengkapnya</p>
+                </a>
+            </div>
+        </div>
+        <!-- Kegiatan Mahasiswa -->
+        <div class="md:flex sm:flex-row-reverse md:gap-20 items-center justify-center my-12">
+            <div class="object-cover overflow-hidden aspect-[4/3] md:w-1/2">
+                <img class="w-full h-full object-cover hover:scale-105 transition-all duration-300" src="../assets/kegiatan-mahasiswa.jpeg" alt="Unila dan Dewas BLU Gelar Rapat">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-xl text-primary font-semibold font-playfair leading-tight my-4 block md:text-3xl" href="#">Kegiatan Mahasiswa</h2>
+                <p>Mahasiswa Universitas Lampung aktif dalam berbagai kegiatan di lingkungan kampus. Mereka terlibat dalam organisasi mahasiswa dan mengikuti kegiatan ekstrakurikuler, seperti seminar, workshop, lomba, dan festival budaya. Selain itu, mahasiswa juga sering mengadakan kegiatan sosial, seperti donor darah, penggalangan dana untuk korban bencana, dan kampanye sosial. Kegiatan mahasiswa di Universitas Lampung memberikan peluang untuk mengembangkan keterampilan, meningkatkan kemampuan sosial, dan memperluas jaringan relasi di lingkungan kampus.</p>
+                <a class="read-more flex items-center gap-4 mt-4 group w-fit" href="#">
+                    <div class="px-4 py-3 rounded-full bg-emerald-100 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <p class="text-primary font-semibold group-hover:underline">Baca selengkapnya</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+        <footer class="w-full bg-primary pt-12 mt-12">
+            <div class="!text-white container mx-auto px-[5%] space-y-8 sm:space-y-0 sm:flex sm:gap-8">
+                <div class="sm:w-2/5">
+                    <img class="mb-4" src="../assets/LOGO-UNILA-HITAM 1.png" alt="Logo Unila" style="width: 8rem">
+                    <div class="mb-4">
+                        <p class="font-playfair">UNIVERSITAS LAMPUNG</p>
+                        <p class="font-playfair">Bersinergi dan Berinovasi demi Negeri</p>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="font-light text-sm mb-2">Jl. Prof. Dr. Sumantri Brojonegoro No. 1
+                        <br>Bandar Lampung, Lampung 35145</p>
+                        <a class="block font-light text-sm" href="tel:+62721702673"><i class="fa-solid fa-phone mr-2"></i>+62 721 702673</a>
+                        <a class="block font-light text-sm" href="tel:+62721702767"><i class="fa-solid fa-fax mr-2"></i>+62 721 702767</a>
+                        <a class="block font-light text-sm" href="mailto:humas@kpa.unila.ac.id"><i class="fa-solid fa-envelope mr-2"></i>humas@kpa.unila.ac.id</a>
+                    </div>
+                </div>
+                <div class="sm:w-1/5">
+                    <h5 class="font-plusJakarta font-semibold mb-2">LEMBAGA DAN BIRO</h5>
+                    <ul class="space-y-2">
+                        <li><a href="https://bak.unila.ac.id/">BAK</a></li>
+                        <li><a href="https://bphm.unila.ac.id/">BPHM</a></li>
+                        <li><a href="https://buk.unila.ac.id/">BUK</a></li>
+                        <li><a href="https://lppm.unila.ac.id/">LPPM</a></li>
+                        <li><a href="https://lp3m.unila.ac.id/">LP3M</a></li>
+                    </ul>
+                </div>
+                <div class="sm:w-1/5">
+                    <h5 class="font-plusJakarta font-semibold mb-2">KERJASAMA</h5>
+                    <ul class="space-y-2">
+                        <li><a href="https://io.unila.ac.id">International Office</a></li>
+                        <li><a href="https://www.unila.ac.id/alumni-dan-mitra/">Alumni</a></li>
+                        <li><a href="https://www.unila.ac.id/kerjasama/">Kerjasama Dalam Negeri</a></li>
+                    </ul>
+                </div>
+                <div class="sm:w-1/5">
+                    <h5 class="font-plusJakarta font-semibold mb-2">BERKUNJUNG</h5>
+                    <ul class="space-y-2">
+                        <li><a href="https://goo.gl/maps/nSG4SUNrbzZT1hiU7" target="_blank">Peta Kampus</a></li>
+                        <li><a href="#pengumuman">Pengumuman</a></li>
+                        <li><a href="#agenda">Agenda</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full mt-12 bg-secondary">
+                <p class="text-center font-light text-sm text-white py-2">© 2023 UNIVERSITAS LAMPUNG</p>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+</body>
