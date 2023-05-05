@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/39a854cbd3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Universitas Lampung</title>
+  </head>
+  <body>
+    <div
+      class="fixed bottom-8 right-8 z-50 h-16 w-16 flex items-center justify-center hover:cursor-pointer rounded-full bg-tertiary shadow-lg group"
+    >
+      <p
+        class="text-xs text-center absolute opacity-0 group-hover:opacity-100 group-hover:block transition-all leading-none"
+      >
+        BANTUAN
+      </p>
+      <i
+        class="fa-solid fa-phone-volume absolute group-hover:opacity-0 transition-all"
+      ></i>
+    </div>
+    <header
+      class="bg-primary absolute top-0 left-0 w-full flex items-center z-20"
+    >
+      <div class="container mx-auto px-[5%]">
+        <div class="flex items-center justify-between relative">
+          <a
+            class="px-4 py-2 flex items-center gap-1 bg-secondary"
+            href="index.html"
+          >
+            <img
+              class="w-[4rem]"
+              src="../../assets/LOGO-UNILA-HITAM 1.png"
+              alt="Logo Universitas Lampung"
+            />
+            <div>
+              <p
+                class="font-playfair text-white text-center text-sm sm:text-base"
+              >
+                UNIVERSITAS
+              </p>
+              <p
+                class="font-playfair text-white text-center text-sm sm:text-base"
+              >
+                LAMPUNG
+              </p>
+            </div>
+          </a>
+          <div class="flex items-center px-4">
+            <button
+              id="nav-btn"
+              name="nav-btn"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="nav-btn-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="nav-btn-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="nav-btn-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg w-full top-full right-0 lg:block lg:static lg:bg-transparent lg:max-w-full"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="../about.html"
+                    class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white"
+                    >Tentang Unila</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="../akademik.html"
+                    class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white"
+                    >Akademik</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="../penerimaan.html"
+                    class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white"
+                    >Penerimaan</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="../kemahasiswaan.html"
+                    class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white"
+                    >Mahasiswa</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="../penelitian.html"
+                    class="text-base font-plusJakarta text-dark py-2 mx-4 flex group-hover:text-primary lg:group-hover:text-tertiary lg:text-white"
+                    >Penelitian</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="container px-[5%] mx-auto mt-32">
+      <div class="navigation font-plusJakarta text-sm opacity-60">
+        <a href="../index.html">HOME</a>
+        <i class="fa-solid fa-chevron-right text-sm px-1 text-tertiary"></i>
+        <a href="../akademik.html">AKADEMIK</a>
+        <i class="fa-solid fa-chevron-right text-sm px-1 text-tertiary"></i>
+        <a href="#">FEB</a>
+    </div>
+        <div class="my-8 ">
+            <h2 class="text-xl text-primary font-semibold font-playfair leading-tight mb-4 block md:text-3xl">Organisasi Mahasiswa</h2>
+        </div>
+        <div class="mb-12">
+            <p>
+                Pengembangan kemahasiswaan merupakan salah satu bagian dari sub sistem pendidikan tinggi dan tidak terlepas dari kebijaksanaan umum sistem pendidikan. Pengembangan kemahasiswaan merupakan tugas nasional yang penting karena mahasiswa sebagai sumberdaya manusia merupakan potensi yang vital dan strategis. Pengembangan kemahasiswaan dilakukan selaras dengan pembinaan dan pengembangan generasi muda Indonesia.
+                <br><br>
+Berdasarkan Surat Keputusan Mendikbud nomor 155/O/1998 tentang Pedoman Umum Organisasi Kemahasiswaan di Perguruan Tinggi, pengembangan kemahasiswaan merupakan wahana dan sarana membentuk mahasiswa menjadi manusia yang berjiwa pancasila, bertanggung jawab, mandiri ,dan mampu mengisi kemerdekaan bangsa. Pengembangan kehidupan kemahasiswaan tersebut dilaksanakan melalui kegiatan ekstrakurikuler.
+<br><br>
+Pengembangan kemahasiswaan di Universitas Lampung menjadi tanggugjawab seluruh sivitas akademika, yang dilakukan dalam suatu tatanan sistematis yang mengandung rangkaian program pembinaan yang menyeluruh, terarah dan terpadu, serta berlangsung secara terus menerus, yang berlaku baik untuk mahasiswa program Sarjana, Diploma, maupun Pascasarjana.
+            </p>
+        </div>
+      <table class="w-full border-collapse border border-slate-500 font-plusJakarta">
+        <tbody>
+          <tr class="font-bold">
+            <td class="border border-slate-700 p-2" width="38">No.</td>
+            <td class="border border-slate-700 p-2" width="221">Nama Lembaga Mahasiswa</td>
+            <td class="border border-slate-700 p-2" width="44">No.</td>
+            <td class="border border-slate-700 p-2" width="233">Nama Lembaga Mahasiswa</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2 font-semibold" colspan="4">Tingkat Universitas</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2">A.</td>
+            <td class="border border-slate-700 p-2">Bidang Mahasiswa</td>
+            <td class="border border-slate-700 p-2">C.</td>
+            <td class="border border-slate-700 p-2" width="233">Bidang Penalaran dan Rohani</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">1</td>
+            <td class="border border-slate-700 p-2" width="221">Badan Eksekutif Mahasiswa (BEM)</td>
+            <td class="border border-slate-700 p-2" width="44">22</td>
+            <td class="border border-slate-700 p-2" width="233">UKM Birohmah</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">2</td>
+            <td class="border border-slate-700 p-2" width="221">Dewan Perwakilan Mahasisswa</td>
+            <td class="border border-slate-700 p-2" width="44">23</td>
+            <td class="border border-slate-700 p-2">UKM Budha</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2">B.</td>
+            <td class="border border-slate-700 p-2">UKM Olah Raga dan Seni</td>
+            <td class="border border-slate-700 p-2" width="44">24</td>
+            <td class="border border-slate-700 p-2" width="233">UKM Eso</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">3</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Atletik</td>
+            <td class="border border-slate-700 p-2" width="44">25</td>
+            <td class="border border-slate-700 p-2">UKM Hindu</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">4</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Basket Ball</td>
+            <td class="border border-slate-700 p-2">26</td>
+            <td class="border border-slate-700 p-2">UKM Katolik</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">5</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Bidang Seni</td>
+            <td class="border border-slate-700 p-2">27</td>
+            <td class="border border-slate-700 p-2">UKM Kristen</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">6</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Bulu Tangkis</td>
+            <td class="border border-slate-700 p-2">28</td>
+            <td class="border border-slate-700 p-2" width="233">UKM Penelitian</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">7</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Catur</td>
+            <td class="border border-slate-700 p-2">29</td>
+            <td class="border border-slate-700 p-2" width="233">UKM Al Kalam</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">8</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Futsal</td>
+            <td class="border border-slate-700 p-2">D.</td>
+            <td class="border border-slate-700 p-2">Bidang Kekhususan</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">9</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Karate</td>
+            <td class="border border-slate-700 p-2">30</td>
+            <td class="border border-slate-700 p-2">Forum Komunikasi UKM</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">10</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Kempo</td>
+            <td class="border border-slate-700 p-2">31</td>
+            <td class="border border-slate-700 p-2">UKM Fotografi ZOOM</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">11</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Merpati Putih</td>
+            <td class="border border-slate-700 p-2">32</td>
+            <td class="border border-slate-700 p-2">UKM KOIN</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">12</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Paduan Suara Mahasiswa</td>
+            <td class="border border-slate-700 p-2">33</td>
+            <td class="border border-slate-700 p-2">UKM Kopma</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">13</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Pencak Silat</td>
+            <td class="border border-slate-700 p-2">34</td>
+            <td class="border border-slate-700 p-2">UKM KSR/PMI</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">14</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Renang</td>
+            <td class="border border-slate-700 p-2">35</td>
+            <td class="border border-slate-700 p-2">UKM M PIK RAYA</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">15</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Sepak Bola</td>
+            <td class="border border-slate-700 p-2">36</td>
+            <td class="border border-slate-700 p-2">UKM Mapala</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">16</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Taekwondo</td>
+            <td class="border border-slate-700 p-2">37</td>
+            <td class="border border-slate-700 p-2">UKM Menwa</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">17</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Tapak Suci</td>
+            <td class="border border-slate-700 p-2">38</td>
+            <td class="border border-slate-700 p-2">UKM Pramuka</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">18</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Tarung Derajat</td>
+            <td class="border border-slate-700 p-2">39</td>
+            <td class="border border-slate-700 p-2">UKM Rakanila</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">19</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Tenis Meja</td>
+            <td class="border border-slate-700 p-2">40</td>
+            <td class="border border-slate-700 p-2">UKM Sains Teknologi</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">20</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Volly Ball</td>
+            <td class="border border-slate-700 p-2">41</td>
+            <td class="border border-slate-700 p-2">UKM Teknokra</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">21</td>
+            <td class="border border-slate-700 p-2" width="221">UKM Yudo</td>
+            <td class="border border-slate-700 p-2"></td>
+            <td class="border border-slate-700 p-2"></td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2 font-bold" colspan="4">Tingkat Fakultas</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">E.</td>
+            <td class="border border-slate-700 p-2" width="221">Fakultas Ekonomi dan Bisnis</td>
+            <td class="border border-slate-700 p-2" width="44">87</td>
+            <td class="border border-slate-700 p-2" width="233">UKM PERMA-AGT</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">42</td>
+            <td class="border border-slate-700 p-2" width="221">AIESEC-LAMPUNG FEB Unila</td>
+            <td class="border border-slate-700 p-2" width="44">88</td>
+            <td class="border border-slate-700 p-2" width="233">UKM PERMATEP</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">43</td>
+            <td class="border border-slate-700 p-2" width="221">Badan Eksekutif Mahasiswa (BEM)</td>
+            <td class="border border-slate-700 p-2" width="44">I.</td>
+            <td class="border border-slate-700 p-2" width="233">Fakultas Teknik</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">44</td>
+            <td class="border border-slate-700 p-2" width="221">DPM/MPM Fakultas</td>
+            <td class="border border-slate-700 p-2" width="44">89</td>
+            <td class="border border-slate-700 p-2" width="233">BEMF</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">45</td>
+            <td class="border border-slate-700 p-2" width="221">HIMAKTA FEB Unila</td>
+            <td class="border border-slate-700 p-2" width="44">90</td>
+            <td class="border border-slate-700 p-2" width="233">DPM</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">46</td>
+            <td class="border border-slate-700 p-2" width="221">HIMEPA FEB Unila</td>
+            <td class="border border-slate-700 p-2" width="44">91</td>
+            <td class="border border-slate-700 p-2" width="233">FOSSI</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">47</td>
+            <td class="border border-slate-700 p-2" width="221">HMJ Manajemen FEB Unila</td>
+            <td class="border border-slate-700 p-2" width="44">92</td>
+            <td class="border border-slate-700 p-2" width="233">HIMATEKS</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">48</td>
+            <td class="border border-slate-700 p-2">UPT EBEC FEB Unila</td>
+            <td class="border border-slate-700 p-2" width="44">93</td>
+            <td class="border border-slate-700 p-2" width="233">HIMATEM</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">49</td>
+            <td class="border border-slate-700 p-2">UPT EEC</td>
+            <td class="border border-slate-700 p-2" width="44">94</td>
+            <td class="border border-slate-700 p-2" width="233">HIMATEMIA</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">50</td>
+            <td class="border border-slate-700 p-2">UPT KSPM</td>
+            <td class="border border-slate-700 p-2" width="44">95</td>
+            <td class="border border-slate-700 p-2" width="233">HIMATG BHUWANA</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">51</td>
+            <td class="border border-slate-700 p-2">UPT MAHEPEL</td>
+            <td class="border border-slate-700 p-2" width="44">96</td>
+            <td class="border border-slate-700 p-2" width="233">HIMATRO</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">52</td>
+            <td class="border border-slate-700 p-2">UPT PILAR</td>
+            <td class="border border-slate-700 p-2" width="44">97</td>
+            <td class="border border-slate-700 p-2" width="233">MATALAM</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">53</td>
+            <td class="border border-slate-700 p-2">UPT ROIS</td>
+            <td class="border border-slate-700 p-2" width="44">98</td>
+            <td class="border border-slate-700 p-2" width="233">UPT CREMONA</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">F.</td>
+            <td class="border border-slate-700 p-2" width="221">Fakultas Hukum</td>
+            <td class="border border-slate-700 p-2" width="44">J.</td>
+            <td class="border border-slate-700 p-2" width="233">Fakultas ISIP</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">54</td>
+            <td class="border border-slate-700 p-2" width="221">BEM</td>
+            <td class="border border-slate-700 p-2" width="44">99</td>
+            <td class="border border-slate-700 p-2" width="233">BEM FISIP</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">55</td>
+            <td class="border border-slate-700 p-2">DPM/MPM Fakultas</td>
+            <td class="border border-slate-700 p-2" width="44">100</td>
+            <td class="border border-slate-700 p-2" width="233">DPM FISIP</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">56</td>
+            <td class="border border-slate-700 p-2" width="221">HMP PSBH</td>
+            <td class="border border-slate-700 p-2" width="44">101</td>
+            <td class="border border-slate-700 p-2" width="233">HMD APS</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">57</td>
+            <td class="border border-slate-700 p-2" width="221">UKM FH. Mahkamah</td>
+            <td class="border border-slate-700 p-2" width="44">102</td>
+            <td class="border border-slate-700 p-2" width="233">HMD Perpustakaan</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">58</td>
+            <td class="border border-slate-700 p-2" width="221">UKM HIMA HAN</td>
+            <td class="border border-slate-700 p-2" width="44">103</td>
+            <td class="border border-slate-700 p-2" width="233">HMD Hubungan Masyarakat</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">59</td>
+            <td class="border border-slate-700 p-2" width="221">UKM HIMA HI</td>
+            <td class="border border-slate-700 p-2" width="44">104</td>
+            <td class="border border-slate-700 p-2" width="233">HMJ Admistrasi Negara</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">60</td>
+            <td class="border border-slate-700 p-2" width="221">UKM HIMA HTN</td>
+            <td class="border border-slate-700 p-2" width="44">105</td>
+            <td class="border border-slate-700 p-2" width="233">HMJ Admistrasi Niaga/Bisnis</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">61</td>
+            <td class="border border-slate-700 p-2" width="221">UKM HIMA PERDATA</td>
+            <td class="border border-slate-700 p-2" width="44">106</td>
+            <td class="border border-slate-700 p-2" width="233">HMJ Hubungan Masyarakat</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">62</td>
+            <td class="border border-slate-700 p-2" width="221">UKM HIMA PIDANA</td>
+            <td class="border border-slate-700 p-2" width="44">107</td>
+            <td class="border border-slate-700 p-2" width="233">HMJ Ilmu Komunikasi</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">63</td>
+            <td class="border border-slate-700 p-2" width="221">UKM PERSIKUSI</td>
+            <td class="border border-slate-700 p-2" width="44">108</td>
+            <td class="border border-slate-700 p-2" width="233">HMJ Ilmu Pemerintahan</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">64</td>
+            <td class="border border-slate-700 p-2" width="221">UKM MAHUSA</td>
+            <td class="border border-slate-700 p-2" width="44">109</td>
+            <td class="border border-slate-700 p-2" width="233">HMJ Hubungan Internasional</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">65</td>
+            <td class="border border-slate-700 p-2" width="221">UKM POSSI</td>
+            <td class="border border-slate-700 p-2" width="44">110</td>
+            <td class="border border-slate-700 p-2" width="233">HMJ Sosiologi</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2">G.</td>
+            <td class="border border-slate-700 p-2" width="221">Fakultas KIP</td>
+            <td class="border border-slate-700 p-2" width="44">111</td>
+            <td class="border border-slate-700 p-2">UKM F FSPI</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">66</td>
+            <td class="border border-slate-700 p-2" width="221">UKM MAHUSA</td>
+            <td class="border border-slate-700 p-2" width="44">112</td>
+            <td class="border border-slate-700 p-2" width="233">UKM F Republica</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">67</td>
+            <td class="border border-slate-700 p-2" width="221">UKM PERSIKUSI</td>
+            <td class="border border-slate-700 p-2" width="44">113</td>
+            <td class="border border-slate-700 p-2" width="233">UKM F Pecinta Alam Cakrawala</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">68</td>
+            <td class="border border-slate-700 p-2" width="221">UPT FOSSI</td>
+            <td class="border border-slate-700 p-2" width="44">114</td>
+            <td class="border border-slate-700 p-2" width="233">UKM F Cendikia</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">69</td>
+            <td class="border border-slate-700 p-2" width="221">BEM</td>
+            <td class="border border-slate-700 p-2" width="44">115</td>
+            <td class="border border-slate-700 p-2" width="233">UKM F SPEC</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">70</td>
+            <td class="border border-slate-700 p-2" width="221">DPM/MPM Fakultas</td>
+            <td class="border border-slate-700 p-2" width="44">K.</td>
+            <td class="border border-slate-700 p-2" width="233">Fakultas MIPA</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">71</td>
+            <td class="border border-slate-700 p-2" width="221">FPPI FKIP Unila</td>
+            <td class="border border-slate-700 p-2">116</td>
+            <td class="border border-slate-700 p-2" width="233">BEM FMIPA</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">72</td>
+            <td class="border border-slate-700 p-2" width="221">HIMAJIP FKIP Unila</td>
+            <td class="border border-slate-700 p-2">117</td>
+            <td class="border border-slate-700 p-2" width="233">DPM FMIPA</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">73</td>
+            <td class="border border-slate-700 p-2" width="221">HIMAPBS FKIP Unila</td>
+            <td class="border border-slate-700 p-2">118</td>
+            <td class="border border-slate-700 p-2" width="233">HIMAFI</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">74</td>
+            <td class="border border-slate-700 p-2" width="221">HIMAPIS FKIP Unila</td>
+            <td class="border border-slate-700 p-2">119</td>
+            <td class="border border-slate-700 p-2" width="233">HIMAKI</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">75</td>
+            <td class="border border-slate-700 p-2" width="221">HIMASAKTA FKIP Unila</td>
+            <td class="border border-slate-700 p-2">120</td>
+            <td class="border border-slate-700 p-2">HIMAKOM</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">76</td>
+            <td class="border border-slate-700 p-2" width="221">KSS FKIP Unila</td>
+            <td class="border border-slate-700 p-2">121</td>
+            <td class="border border-slate-700 p-2">HIMATIKA</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">H.</td>
+            <td class="border border-slate-700 p-2" width="221">Fakultas Pertanian</td>
+            <td class="border border-slate-700 p-2">122</td>
+            <td class="border border-slate-700 p-2" width="233">HIMBIO</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">77</td>
+            <td class="border border-slate-700 p-2" width="221">BEM FP</td>
+            <td class="border border-slate-700 p-2">123</td>
+            <td class="border border-slate-700 p-2" width="233">UKMF Diving Clubs Anemon</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">78</td>
+            <td class="border border-slate-700 p-2" width="221">DPM FP</td>
+            <td class="border border-slate-700 p-2">124</td>
+            <td class="border border-slate-700 p-2" width="233">UKM-F ROIS</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">79</td>
+            <td class="border border-slate-700 p-2" width="221">HIDRILA</td>
+            <td class="border border-slate-700 p-2">125</td>
+            <td class="border border-slate-700 p-2" width="233">UKMF-PERS NATURAL</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">80</td>
+            <td class="border border-slate-700 p-2" width="221">HIMA SYLVA</td>
+            <td class="border border-slate-700 p-2">L</td>
+            <td class="border border-slate-700 p-2" width="233">Fakultas Kedokteran *</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">81</td>
+            <td class="border border-slate-700 p-2" width="221">HIMAPET</td>
+            <td class="border border-slate-700 p-2">126</td>
+            <td class="border border-slate-700 p-2" width="233">BEM</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">82</td>
+            <td class="border border-slate-700 p-2" width="221">HMJ THP</td>
+            <td class="border border-slate-700 p-2">127</td>
+            <td class="border border-slate-700 p-2">DPM</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">83</td>
+            <td class="border border-slate-700 p-2" width="221">UKM FOSI</td>
+            <td class="border border-slate-700 p-2">128</td>
+            <td class="border border-slate-700 p-2">PMPTD Pakis Rescue Team</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">84</td>
+            <td class="border border-slate-700 p-2" width="221">UKM GUMPALAN</td>
+            <td class="border border-slate-700 p-2">129</td>
+            <td class="border border-slate-700 p-2">Lunar FK</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">85</td>
+            <td class="border border-slate-700 p-2" width="221">UKM HIMASEPERTA</td>
+            <td class="border border-slate-700 p-2">130</td>
+            <td class="border border-slate-700 p-2">HMPS Magister Kesehatan Masyarakat</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 p-2" width="38">86</td>
+            <td class="border border-slate-700 p-2" width="221">UKM LS-MATA</td>
+            <td class="border border-slate-700 p-2">131</td>
+            <td class="border border-slate-700 p-2">FSI FK</td>
+          </tr>
+          <tr>
+          </tr>
+          <tr>
+            <td class="p-2" colspan="4">
+              Sumber: Bagian Kemahasiswaan BAK&nbsp; Unila s.d.&nbsp; Agustus
+              2021
+            </td>
+          </tr>
+          <tr>
+            <td class="p-2" colspan="2">* = data dari fakultas.</td>
+            <td class="p-2"></td>
+            <td class="p-2"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full bg-primary pt-12 mt-12">
+      <div
+        class="!text-white container mx-auto px-[5%] space-y-8 sm:space-y-0 sm:flex sm:gap-8"
+      >
+        <div class="sm:w-2/5">
+          <img
+            class="mb-4"
+            src="../../assets/LOGO-UNILA-HITAM 1.png"
+            alt="Logo Unila"
+            style="width: 8rem"
+          />
+          <div class="mb-4">
+            <p class="font-playfair">UNIVERSITAS LAMPUNG</p>
+            <p class="font-playfair">Bersinergi dan Berinovasi demi Negeri</p>
+          </div>
+          <div class="space-y-2">
+            <p class="font-light text-sm mb-2">
+              Jl. Prof. Dr. Sumantri Brojonegoro No. 1 <br />Bandar Lampung,
+              Lampung 35145
+            </p>
+            <a class="block font-light text-sm" href="tel:+62721702673"
+              ><i class="fa-solid fa-phone mr-2"></i>+62 721 702673</a
+            >
+            <a class="block font-light text-sm" href="tel:+62721702767"
+              ><i class="fa-solid fa-fax mr-2"></i>+62 721 702767</a
+            >
+            <a
+              class="block font-light text-sm"
+              href="mailto:humas@kpa.unila.ac.id"
+              ><i class="fa-solid fa-envelope mr-2"></i>humas@kpa.unila.ac.id</a
+            >
+          </div>
+        </div>
+        <div class="sm:w-1/5">
+          <h5 class="font-plusJakarta font-semibold mb-2">LEMBAGA DAN BIRO</h5>
+          <ul class="space-y-2">
+            <li><a href="https://bak.unila.ac.id/">BAK</a></li>
+            <li><a href="https://bphm.unila.ac.id/">BPHM</a></li>
+            <li><a href="https://buk.unila.ac.id/">BUK</a></li>
+            <li><a href="https://lppm.unila.ac.id/">LPPM</a></li>
+            <li><a href="https://lp3m.unila.ac.id/">LP3M</a></li>
+          </ul>
+        </div>
+        <div class="sm:w-1/5">
+          <h5 class="font-plusJakarta font-semibold mb-2">KERJASAMA</h5>
+          <ul class="space-y-2">
+            <li><a href="https://io.unila.ac.id">International Office</a></li>
+            <li>
+              <a href="https://www.unila.ac.id/alumni-dan-mitra/">Alumni</a>
+            </li>
+            <li>
+              <a href="https://www.unila.ac.id/kerjasama/"
+                >Kerjasama Dalam Negeri</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="sm:w-1/5">
+          <h5 class="font-plusJakarta font-semibold mb-2">BERKUNJUNG</h5>
+          <ul class="space-y-2">
+            <li>
+              <a href="https://goo.gl/maps/nSG4SUNrbzZT1hiU7" target="_blank"
+                >Peta Kampus</a
+              >
+            </li>
+            <li><a href="#pengumuman">Pengumuman</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-full mt-12 bg-secondary">
+        <p class="text-center font-light text-sm text-white py-2">
+          © 2023 UNIVERSITAS LAMPUNG
+        </p>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
